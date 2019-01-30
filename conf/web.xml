@@ -63,7 +63,7 @@
   <!--                       resources to be served.  [2048]                -->
   <!--                                                                      -->
   <!--   readonly            Is this context "read only", so HTTP           -->
-  <!--                       commands like PUT and DELETE are               -->
+  <!--                       commands like PUT anFd DELETE are               -->
   <!--                       rejected?  [true]                              -->
   <!--                                                                      -->
   <!--   readmeFile          File to display together with the directory    -->
