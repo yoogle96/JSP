@@ -1,0 +1,12 @@
+127.0.0.1 - - [01/Feb/2019:02:25:03 +0900] "GET / HTTP/1.1" 200 11286
+127.0.0.1 - - [01/Feb/2019:02:25:03 +0900] "GET /asf-logo-wide.svg HTTP/1.1" 200 27235
+127.0.0.1 - - [01/Feb/2019:02:25:10 +0900] "GET /chap15/list.jsp HTTP/1.1" 200 1838
+127.0.0.1 - - [01/Feb/2019:02:25:17 +0900] "POST /chap15/writeMessage.jsp HTTP/1.1" 200 233
+127.0.0.1 - - [01/Feb/2019:02:25:18 +0900] "GET /chap15/list.jsp HTTP/1.1" 200 1842
+127.0.0.1 - - [01/Feb/2019:02:25:19 +0900] "GET /chap15/list.jsp?page=2 HTTP/1.1" 200 1474
+127.0.0.1 - - [01/Feb/2019:02:25:21 +0900] "GET /chap15/list.jsp?page=1 HTTP/1.1" 200 1842
+127.0.0.1 - - [01/Feb/2019:02:25:23 +0900] "GET /chap15/confirmDeletion.jsp?messageId=6 HTTP/1.1" 200 458
+127.0.0.1 - - [01/Feb/2019:02:25:24 +0900] "POST /chap15/deleteMessage.jsp HTTP/1.1" 200 286
+127.0.0.1 - - [01/Feb/2019:02:25:26 +0900] "GET /chap15/list.jsp HTTP/1.1" 200 1842
+127.0.0.1 - - [01/Feb/2019:02:25:27 +0900] "GET /chap15/confirmDeletion.jsp?messageId=6 HTTP/1.1" 200 458
+127.0.0.1 - - [01/Feb/2019:02:25:28 +0900] "POST /chap15/deleteMessage.jsp HTTP/1.1" 200 245

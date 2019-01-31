@@ -1,0 +1,18 @@
+31-Jan-2019 22:52:41.248 경고 [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+31-Jan-2019 22:54:49.293 경고 [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+31-Jan-2019 22:55:45.808 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+31-Jan-2019 22:55:45.809 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Jan-2019 22:55:45.816 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+31-Jan-2019 22:55:45.823 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Jan-2019 22:55:45.889 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap14] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Jan-2019 22:55:45.890 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap14] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+31-Jan-2019 22:55:45.901 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Jan-2019 22:55:45.903 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+31-Jan-2019 22:55:45.906 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Jan-2019 22:55:45.906 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
