@@ -1,0 +1,213 @@
+04-Feb-2019 20:11:25.777 경고 [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+04-Feb-2019 20:11:44.184 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Feb-2019 20:11:44.185 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 20:11:44.193 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 20:11:44.200 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Feb-2019 20:11:44.277 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap15] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+04-Feb-2019 20:11:44.277 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap15] registered the JDBC driver [org.apache.commons.dbcp2.PoolingDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+04-Feb-2019 20:11:44.278 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap15] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+04-Feb-2019 20:11:44.279 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap15] appears to have started a thread named [commons-pool-evictor-thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+04-Feb-2019 20:11:44.297 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 20:11:44.302 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 20:11:44.304 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 20:11:44.305 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:03:28.353 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+04-Feb-2019 21:03:28.358 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+04-Feb-2019 21:03:28.358 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+04-Feb-2019 21:03:28.358 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Feb-2019 21:03:28.358 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.2
+04-Feb-2019 21:03:28.358 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Feb-2019 21:03:28.359 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
+04-Feb-2019 21:03:28.359 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           10+46
+04-Feb-2019 21:03:28.359 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            "Oracle Corporation"
+04-Feb-2019 21:03:28.359 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/apache-tomcat-8.5.37
+04-Feb-2019 21:03:28.360 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/apache-tomcat-8.5.37
+04-Feb-2019 21:03:28.362 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Feb-2019 21:03:28.362 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Feb-2019 21:03:28.362 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Feb-2019 21:03:28.363 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Library/Tomcat/conf/logging.properties
+04-Feb-2019 21:03:28.363 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Feb-2019 21:03:28.363 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Feb-2019 21:03:28.363 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Feb-2019 21:03:28.363 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Feb-2019 21:03:28.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Feb-2019 21:03:28.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Library/Tomcat
+04-Feb-2019 21:03:28.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Library/Tomcat
+04-Feb-2019 21:03:28.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Library/Tomcat/temp
+04-Feb-2019 21:03:28.364 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yoogle/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Feb-2019 21:03:28.409 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:03:28.439 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Feb-2019 21:03:28.449 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:03:28.450 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Feb-2019 21:03:28.451 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 538 ms
+04-Feb-2019 21:03:28.495 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Feb-2019 21:03:28.496 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+04-Feb-2019 21:03:28.515 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap13.war]
+04-Feb-2019 21:03:28.710 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:03:28.985 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap13.war] has finished in [469] ms
+04-Feb-2019 21:03:28.986 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap16.war]
+04-Feb-2019 21:03:28.996 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:03:29.098 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap16.war] has finished in [112] ms
+04-Feb-2019 21:03:29.100 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap14.war]
+04-Feb-2019 21:03:29.114 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:03:29.133 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap14.war] has finished in [33] ms
+04-Feb-2019 21:03:29.134 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap15.war]
+04-Feb-2019 21:03:29.151 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:03:29.439 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Feb-2019 21:03:29.516 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap15.war] has finished in [382] ms
+04-Feb-2019 21:03:29.517 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap03]
+04-Feb-2019 21:03:29.534 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap03] has finished in [17] ms
+04-Feb-2019 21:03:29.534 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap02]
+04-Feb-2019 21:03:29.551 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap02] has finished in [17] ms
+04-Feb-2019 21:03:29.551 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap11]
+04-Feb-2019 21:03:29.573 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap11] has finished in [22] ms
+04-Feb-2019 21:03:29.573 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/docs]
+04-Feb-2019 21:03:29.588 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/docs] has finished in [15] ms
+04-Feb-2019 21:03:29.589 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap10]
+04-Feb-2019 21:03:29.600 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap10] has finished in [12] ms
+04-Feb-2019 21:03:29.600 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap09]
+04-Feb-2019 21:03:29.614 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap09] has finished in [14] ms
+04-Feb-2019 21:03:29.614 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/manager]
+04-Feb-2019 21:03:29.637 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/manager] has finished in [23] ms
+04-Feb-2019 21:03:29.637 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap07]
+04-Feb-2019 21:03:29.651 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap07] has finished in [14] ms
+04-Feb-2019 21:03:29.651 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap06]
+04-Feb-2019 21:03:29.664 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap06] has finished in [13] ms
+04-Feb-2019 21:03:29.664 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap08]
+04-Feb-2019 21:03:29.677 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap08] has finished in [13] ms
+04-Feb-2019 21:03:29.677 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/examples]
+04-Feb-2019 21:03:29.840 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/examples] has finished in [163] ms
+04-Feb-2019 21:03:29.840 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/ROOT]
+04-Feb-2019 21:03:29.857 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/ROOT] has finished in [17] ms
+04-Feb-2019 21:03:29.857 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap12]
+04-Feb-2019 21:03:29.938 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap12] has finished in [80] ms
+04-Feb-2019 21:03:29.938 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/host-manager]
+04-Feb-2019 21:03:29.958 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/host-manager] has finished in [20] ms
+04-Feb-2019 21:03:29.963 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:03:29.974 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:03:29.976 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 1525 ms
+04-Feb-2019 21:04:50.005 정보 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap17_war.war]
+04-Feb-2019 21:04:50.042 경고 [localhost-startStop-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:04:50.134 정보 [localhost-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Feb-2019 21:04:50.138 정보 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap17_war.war] has finished in [132] ms
+04-Feb-2019 21:05:01.682 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Feb-2019 21:05:01.683 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:05:01.692 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:05:01.698 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Feb-2019 21:05:01.785 경고 [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap15] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+04-Feb-2019 21:05:01.785 경고 [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap15] registered the JDBC driver [org.apache.commons.dbcp2.PoolingDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+04-Feb-2019 21:05:01.786 경고 [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap15] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+04-Feb-2019 21:05:01.786 경고 [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap15] appears to have started a thread named [commons-pool-evictor-thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+04-Feb-2019 21:05:01.811 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:05:01.815 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:05:01.818 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:05:01.819 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:05:41.957 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+04-Feb-2019 21:05:41.962 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+04-Feb-2019 21:05:41.962 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+04-Feb-2019 21:05:41.962 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Feb-2019 21:05:41.962 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.2
+04-Feb-2019 21:05:41.963 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Feb-2019 21:05:41.963 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
+04-Feb-2019 21:05:41.963 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           10+46
+04-Feb-2019 21:05:41.963 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            "Oracle Corporation"
+04-Feb-2019 21:05:41.963 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/apache-tomcat-8.5.37
+04-Feb-2019 21:05:41.964 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/apache-tomcat-8.5.37
+04-Feb-2019 21:05:41.966 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Feb-2019 21:05:41.966 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Feb-2019 21:05:41.966 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Feb-2019 21:05:41.966 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Library/Tomcat/conf/logging.properties
+04-Feb-2019 21:05:41.967 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Feb-2019 21:05:41.967 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Feb-2019 21:05:41.967 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Feb-2019 21:05:41.967 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Feb-2019 21:05:41.967 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Feb-2019 21:05:41.968 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Library/Tomcat
+04-Feb-2019 21:05:41.968 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Library/Tomcat
+04-Feb-2019 21:05:41.968 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Library/Tomcat/temp
+04-Feb-2019 21:05:41.968 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yoogle/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Feb-2019 21:05:42.010 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:05:42.041 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Feb-2019 21:05:42.055 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:05:42.057 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Feb-2019 21:05:42.057 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 545 ms
+04-Feb-2019 21:05:42.104 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Feb-2019 21:05:42.104 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+04-Feb-2019 21:05:42.125 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap13.war]
+04-Feb-2019 21:05:42.349 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:05:42.654 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap13.war] has finished in [529] ms
+04-Feb-2019 21:05:42.654 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap17.war]
+04-Feb-2019 21:05:42.688 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:05:42.821 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Feb-2019 21:05:42.827 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap17.war] has finished in [173] ms
+04-Feb-2019 21:05:42.828 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap16.war]
+04-Feb-2019 21:05:42.842 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:05:43.017 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap16.war] has finished in [188] ms
+04-Feb-2019 21:05:43.018 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap14.war]
+04-Feb-2019 21:05:43.041 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:05:43.066 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap14.war] has finished in [48] ms
+04-Feb-2019 21:05:43.067 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap15.war]
+04-Feb-2019 21:05:43.085 경고 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Feb-2019 21:05:43.404 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Feb-2019 21:05:43.502 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/apache-tomcat-8.5.37/webapps/chap15.war] has finished in [435] ms
+04-Feb-2019 21:05:43.503 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap03]
+04-Feb-2019 21:05:43.526 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap03] has finished in [22] ms
+04-Feb-2019 21:05:43.526 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap02]
+04-Feb-2019 21:05:43.545 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap02] has finished in [18] ms
+04-Feb-2019 21:05:43.545 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap11]
+04-Feb-2019 21:05:43.572 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap11] has finished in [27] ms
+04-Feb-2019 21:05:43.584 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/docs]
+04-Feb-2019 21:05:43.598 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/docs] has finished in [15] ms
+04-Feb-2019 21:05:43.599 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap10]
+04-Feb-2019 21:05:43.612 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap10] has finished in [14] ms
+04-Feb-2019 21:05:43.613 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap09]
+04-Feb-2019 21:05:43.626 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap09] has finished in [12] ms
+04-Feb-2019 21:05:43.626 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/manager]
+04-Feb-2019 21:05:43.651 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/manager] has finished in [24] ms
+04-Feb-2019 21:05:43.651 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap07]
+04-Feb-2019 21:05:43.664 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap07] has finished in [13] ms
+04-Feb-2019 21:05:43.664 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap06]
+04-Feb-2019 21:05:43.677 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap06] has finished in [12] ms
+04-Feb-2019 21:05:43.677 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap08]
+04-Feb-2019 21:05:43.691 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap08] has finished in [14] ms
+04-Feb-2019 21:05:43.691 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/examples]
+04-Feb-2019 21:05:43.837 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/examples] has finished in [146] ms
+04-Feb-2019 21:05:43.837 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/ROOT]
+04-Feb-2019 21:05:43.849 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/ROOT] has finished in [12] ms
+04-Feb-2019 21:05:43.849 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap12]
+04-Feb-2019 21:05:43.931 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/chap12] has finished in [82] ms
+04-Feb-2019 21:05:43.931 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/apache-tomcat-8.5.37/webapps/host-manager]
+04-Feb-2019 21:05:43.947 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/apache-tomcat-8.5.37/webapps/host-manager] has finished in [16] ms
+04-Feb-2019 21:05:43.952 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Feb-2019 21:05:43.961 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+04-Feb-2019 21:05:43.963 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 1905 ms
