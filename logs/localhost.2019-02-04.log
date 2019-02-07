@@ -214,3 +214,5 @@ Caused by: java.lang.ClassNotFoundException: com.mysql.jdbcDriver
 04-Feb-2019 21:05:43.831 정보 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
 04-Feb-2019 21:05:43.831 정보 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
 04-Feb-2019 21:05:43.832 정보 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@711058fd')
+04-Feb-2019 21:06:39.412 정보 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Feb-2019 21:06:39.413 정보 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
