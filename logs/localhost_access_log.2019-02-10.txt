@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [10/Feb/2019:01:25:15 +0900] "GET /chap19/xml/bookList.jsp HTTP/1.1" 200 752
+0:0:0:0:0:0:0:1 - - [10/Feb/2019:01:25:32 +0900] "GET /chap19/board/boardList.jsp HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [10/Feb/2019:01:25:34 +0900] "GET /chap19/login.jsp?memberId=asdfdaf&password=asdfadsf HTTP/1.1" 200 123
+0:0:0:0:0:0:0:1 - - [10/Feb/2019:01:25:43 +0900] "GET /chap19/board/boardList.jsp HTTP/1.1" 200 110
