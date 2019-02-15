@@ -1,0 +1,55 @@
+15-Feb-2019 04:18:23.757 경고 [main] org.apache.catalina.core.StandardServer.await StandardServer.await: Invalid command '' received
+15-Feb-2019 04:19:23.437 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Feb-2019 04:19:23.438 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Feb-2019 04:19:23.446 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+15-Feb-2019 04:19:23.452 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Feb-2019 04:19:23.520 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap17] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+15-Feb-2019 04:19:23.556 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap20] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Feb-2019 04:19:23.556 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap20] registered the JDBC driver [org.apache.commons.dbcp2.PoolingDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Feb-2019 04:19:23.556 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap20] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+15-Feb-2019 04:19:23.557 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap20] appears to have started a thread named [commons-pool-EvictionTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@10/java.util.TimerThread.run(Timer.java:506)
+15-Feb-2019 04:19:23.564 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [board] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Feb-2019 04:19:23.564 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [board] registered the JDBC driver [org.apache.commons.dbcp2.PoolingDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Feb-2019 04:19:23.565 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [board] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+15-Feb-2019 04:19:23.565 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [board] appears to have started a thread named [commons-pool-EvictionTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@10/java.util.TimerThread.run(Timer.java:506)
+15-Feb-2019 04:19:23.567 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap15] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Feb-2019 04:19:23.568 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [chap15] registered the JDBC driver [org.apache.commons.dbcp2.PoolingDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Feb-2019 04:19:23.568 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap15] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/java.lang.Object.wait(Native Method)
+ java.base@10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:85)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+15-Feb-2019 04:19:23.568 경고 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [chap15] appears to have started a thread named [commons-pool-evictor-thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10/java.lang.Thread.run(Thread.java:844)
+15-Feb-2019 04:19:23.582 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Feb-2019 04:19:23.585 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+15-Feb-2019 04:19:23.588 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Feb-2019 04:19:23.588 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
